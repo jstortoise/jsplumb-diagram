@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "jsplumbtoolkit": "file:../../jsplumbtoolkit.tgz"
+  },
+  "name": "jsplumb",
+  "description": "",
+  "version": "1.0.0",
+  "main": "Gruntfile.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

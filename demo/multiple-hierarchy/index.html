@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" href="/img/favicon.ico">
+        <title>jsPlumb Toolkit - Hierarchy Layout (Multiple Roots)</title>
+        <link href="//fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/main.css" rel="stylesheet">
+        <link rel="stylesheet" href="node_modules/jsplumbtoolkit/dist/css/jsplumbtoolkit-defaults.css">
+        <link rel="stylesheet" href="node_modules/jsplumbtoolkit/dist/css/jsplumbtoolkit-demo.css">
+        <link rel="stylesheet" href="app.css">
+
+    </head>
+
+    <body class="jtk-bootstrap jtk-bootstrap-wide">
+
+        <div class="jtk-header">
+    <a class="jtk-logo" href="../../index.html"><img src="../../img/logo-medium-jsplumb.png"></a>
+
+    <div class="jtk-nav">
+        <li><a href="../../index.html#demos">DEMOS</a></li>
+<li><a href="../../doc/home.html">DOCS</a></li>
+<li><a href="../../apidocs/index.html">APIDOCS</a></li>
+
+    </div>
+
+</div>
+
+
+        <div class="jtk-page-container">
+            <div class="jtk-container">
+                
+
+<!-- content -->
+        <script type="jtk" id="jtk-template-default">
+            <div style="width:${w}px;height:${h}px;">
+                <div class="name">
+                    <div class="delete" title="Click to delete">
+                        <i class="fa fa-times"/>
+                    </div>
+                    <span>${name}</span>
+                    <div class="add" title="Add child node">
+                        <i class="fa fa-plus"/>
+                    </div>
+                </div>
+            </div>
+        </script>
+
+        <div class="jtk-demo-main" id="jtk-demo-multiple-hierarchy">
+
+            <!-- this is the main drawing area -->
+            <div class="jtk-demo-canvas canvas-wide">
+
+                <div class="controls">
+                    <i class="fa fa-arrows selected-mode" mode="pan" title="Pan Mode"></i>
+                    <i class="fa fa-pencil" mode="select" title="Select Mode"></i>
+                    <i class="fa fa-home" reset title="Zoom To Fit"></i>
+                </div>
+
+                <!-- miniview -->
+                <div class="miniview"></div>
+            </div>
+
+            <div class="description">
+                <p>
+                    This is a demonstration of the hierarchical layout. In this page, the layout is oriented vertically,
+                    but it can also be oriented horizontally.  The layout uses the Walker algorithm to position nodes.
+                </p>
+                <ul>
+                    <li>Click the + button on a node to add a new child</li>
+                    <li>Click the X button on a node to delete. It and all of its descendants will be deleted.</li>
+                    <li>Click the 'Pencil' icon to enter 'select' mode, then select several nodes. Click the canvas to exit.</li>
+                    <li>Click the 'Home' icon to zoom out and see all the nodes.</li>
+                </ul>
+            </div>
+
+            <!-- the current dataset -->
+            <div class="jtk-demo-dataset"></div>
+        </div>
+
+        <!-- /content -->
+<script src="node_modules/jsplumbtoolkit/dist/js/jsplumbtoolkit.js"></script>
+<script src="node_modules/jsplumbtoolkit/dist/js/syntax-highlighter.js"></script>
+<!-- demo -->
+        <script src="demo-support.js"></script>
+        <script src="app.js"></script>
+        <!-- /demo -->
+        
+            </div>
+        </div>
+
+    </body>
+
+</html>
